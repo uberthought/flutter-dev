@@ -3,11 +3,11 @@
 spin up the dev container in vs code dev container
 open terminal
 
-flutter create demo
-cp debug.sh demo
-cd demo
-chmod +x debug.sh
-./debug.sh
+    flutter create demo
+    cp debug.sh demo
+    cd demo
+    chmod +x debug.sh
+    ./debug.sh
 
 # Description
 
