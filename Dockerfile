@@ -7,11 +7,11 @@ RUN apt update
 RUN apt install android-studio -y
 
 WORKDIR /root
-   
+
 RUN git clone https://github.com/flutter/flutter.git
 ENV PATH "$PATH:/root/flutter/bin"
 RUN echo export PATH="$PATH:/root/flutter/bin" >> ~/.bashrc
-   
+
 RUN flutter doctor
 RUN flutter precache
 RUN flutter upgrade
@@ -37,3 +37,5 @@ RUN apt install -y clang cmake pkg-config ninja-build libgtk-3-dev
 
 RUN flutter channel beta
 RUN flutter upgrade
+RUN flutter precache
+RUN flutter doctor
