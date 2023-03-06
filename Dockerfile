@@ -34,3 +34,6 @@ RUN apt install -y clang cmake pkg-config ninja-build libgtk-3-dev
 
 # RUN echo export ANDROID_HOME=/opt/android-sdk >> ~/.bashrc
 # flutter run -d web-server --debug
+
+RUN flutter channel beta
+RUN flutter upgrade
